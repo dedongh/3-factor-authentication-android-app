@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FingerPrintActivity"
+    android:background="#3D3729">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headerLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/afro"
+            android:id="@+id/icon"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One-touch Sign In"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/errorText"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:id="@+id/errorText"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="italic|bold"
+        android:layout_marginBottom="90dp"
+        android:text="Swipe or Place your thumb on the FingerPrint to Login"/>
+    <ImageView
+        android:id="@+id/print"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_fingerprint"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

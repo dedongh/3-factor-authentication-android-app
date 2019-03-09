@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#3D3729">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headerLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/afro"
+            android:id="@+id/icon"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Saved Pin Code Below"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+        <com.andrognito.pinlockview.IndicatorDots
+            android:id="@+id/indicator_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+        <com.andrognito.pinlockview.PinLockView
+            android:id="@+id/pin_lock_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indicator_dots"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            app:keypadButtonSize="72dp"
+            app:keypadShowDeleteButton="true"
+            app:keypadTextColor="@color/white"
+            app:keypadTextSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>
